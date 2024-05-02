@@ -1,0 +1,21 @@
+@import "variable";
+h1 {
+  color: $color-text-noir;
+}
+.leftColumn {
+  background-color: $color-background_identification;
+}
+.rightColumn img {
+  width: 100%;
+}
+.input:focus {
+  border-color: $color-background_btn_tableau;
+  outline: none; 
+}
+.btn {
+  background-color: $color-background_btn_tableau;
+
+  &:hover {
+    background-color: $color-background_btn_tableau_hover;
+  }
+}

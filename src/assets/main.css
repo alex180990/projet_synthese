@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto+Slab&family=Rubik:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Slab&family=Rubik:wght@400;500;600;700&display=swap");
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*********************************/ /* General */
+/*********************************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #363636;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 3.5rem !important;
+}
+
+h3, h2, h1 {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.5rem !important;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 4rem !important;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2.5rem !important;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+.page-padding {
+  padding: 8rem 10rem;
+}
+
+.page-background {
+  background-color: #f8fafc;
+}
+
+.btn-modal-delete {
+  background-color: #ef4444;
+}
+.btn-modal-delete:hover {
+  background-color: #bd1010;
+}
+.btn-modal-delete__outline {
+  border: solid 1px #ef4444;
+  color: #ef4444;
+}
+.btn-modal-delete__outline:hover {
+  border: solid 1px #bd1010;
+  color: #bd1010;
+}
+
+.btn-accept {
+  background-color: #54b600;
+}
+.btn-accept:hover {
+  background-color: #3c8300;
+}
+
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+h1 {
+  color: #111111;
+}
+
+.leftColumn {
+  background-color: #eeeeee;
+}
+
+.rightColumn img {
+  width: 100%;
+}
+
+.input:focus {
+  border-color: #0c9da4;
+  outline: none;
+}
+
+.btn {
+  background-color: #0c9da4;
+}
+.btn:hover {
+  background-color: #86ced1;
+}
+
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+nav {
+  padding: 30px 0;
+  text-align: left !important;
+  width: 300px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+span {
+  font-size: 1.7rem;
+}
+
+.withBorder {
+  border-right: 3px solid;
+}
+
+#dashboard.withBorder {
+  border-right: #0c9da4 solid;
+}
+
+#demandesStage.withBorder {
+  border-right: #d2a350 solid;
+}
+
+#offreStage.withBorder {
+  border-right: #ba2025 solid;
+}
+
+#candidats.withBorder {
+  border-right: #7f2987 solid;
+}
+
+#entreprises.withBorder {
+  border-right: #86a8e6 solid;
+}
+
+#dashboard span {
+  color: #0c9da4;
+  font-weight: bold;
+}
+
+#demandesStage span {
+  color: #d2a350;
+}
+
+#offreStage span {
+  color: #ba2025;
+}
+
+#candidats span {
+  color: #7f2987;
+}
+
+#entreprises span {
+  color: #86a8e6;
+}
+
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+.navMenuAction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navMenuAction__item {
+  font-size: 0.9rem;
+  gap: 5rem;
+}
+
+.navMenuAction__utilisateur {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.navMenuAction__utilisateur img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.navMenuAction_btn_offre {
+  color: #ba2025;
+  border-color: #ba2025;
+}
+.navMenuAction_btn_offre:hover {
+  background-color: #ba2025;
+  color: #fff;
+}
+
+.navMenuAction_btn_demande {
+  color: #d2a350;
+  border-color: #d2a350;
+}
+.navMenuAction_btn_demande:hover {
+  background-color: #d2a350;
+}
+
+.navMenuAction_btn_entreprise {
+  color: #86a8e6;
+  border-color: #86a8e6;
+}
+.navMenuAction_btn_entreprise:hover {
+  background-color: #86a8e6;
+}
+
+.navMenuAction_btn_candidat {
+  color: #7f2987;
+  border-color: #7f2987;
+}
+.navMenuAction_btn_candidat:hover {
+  background-color: #7f2987;
+}
+
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+.DemandeStage__Titre {
+  border-left: 1rem solid #986d22;
+  padding-left: 1.5rem;
+  margin-bottom: 4rem;
+}
+.DemandeStage__Titre p,
+.DemandeStage__Titre h1 {
+  color: #707070;
+}
+.DemandeStage__Titre h1 {
+  font-weight: bold;
+}
+
+.DemandeStage__btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.DemandeStage__section {
+  color: #363636;
+}
+.DemandeStage__section h2 {
+  color: #0c9da4;
+  margin-bottom: 2rem;
+}
+.DemandeStage__section h3 {
+  color: #0c9da4;
+}
+
+.DemandeStage__section__Entete {
+  margin-bottom: 5rem;
+}
+
+.DemandeStage__section__info__item {
+  border-left: 1rem solid #986d22;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.file-input::before {
+  content: "Parcourir";
+  display: inline-block;
+  background-color: #0c9da4;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-stage {
+  background-color: #d2a350;
+}
+.btn-stage:hover {
+  background-color: #966d26;
+}
+
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+.border-item {
+  border-left-style: solid;
+  border-left-width: 4px;
+}
+
+.border-offres {
+  border-left-color: #ba2025;
+}
+
+.border-offres-inactive {
+  border-left-color: #848280;
+}
+
+.bg-offres {
+  background-color: #ba2025;
+}
+
+.bg-offres-inactives {
+  background-color: #848280;
+}
+
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+.bg-demandes {
+  background-color: #d2a350;
+}
+.bg-demandes__darker {
+  background-color: #be8b31;
+}
+
+.bg-offres {
+  background-color: #ba2025;
+}
+.bg-offres__darker {
+  background-color: #8e191c;
+}
+
+.bg-candidats {
+  background-color: #7f2987;
+}
+.bg-candidats__darker {
+  background-color: #5a1d60;
+}
+
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+.border-item {
+  border-left-style: solid;
+  border-left-width: 4px;
+}
+
+.border-demandes {
+  border-left-color: #d2a350;
+}
+
+.border-demandes-inactives {
+  border-left-color: #848280;
+}
+
+.bg-demandes {
+  background-color: #d2a350;
+}
+
+.bg-demandes-inactives {
+  background-color: #848280;
+}
+
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+.loader-background {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loader-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #000;
+  margin: 0 15px;
+  animation: loader infinite 0.3s alternate;
+  background: #0c9da4;
+}
+
+.d2 {
+  animation-delay: 0.05s;
+}
+
+.d3 {
+  animation-delay: 0.1s;
+}
+
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+.text-demandes {
+  color: #d2a350;
+}
+
+.text-offres {
+  color: #ba2025;
+}
+
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+.presentation-body-title {
+  color: #0c9da4;
+}
+
+.presentation-title-border {
+  border-left: solid #0c9da4 10px;
+}
+
+.btn-entreprise {
+  background-color: #0c9da4;
+}
+.btn-entreprise:hover {
+  background-color: #054245;
+}
+.btn-entreprise__outline {
+  border: solid 1px #0c9da4;
+  color: #0c9da4;
+}
+.btn-entreprise__outline:hover {
+  border: solid 1px #054245;
+  color: #054245;
+}
+
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+.btn-offrestage {
+  background-color: #ba2025;
+}
+.btn-offrestage:hover {
+  background-color: #8e191c;
+}
+
+/* $color-text-principale: #c5c5c5; //Couleur dans le paragraphe ou contenu. */
+.btn-candidats {
+  background-color: #7f2987;
+}
+.btn-candidats:hover {
+  background-color: #5a1d60;
+}
+.btn-candidats__outline {
+  border: solid 1px #7f2987;
+  color: #7f2987;
+}
+.btn-candidats__outline:hover {
+  border: solid 1px #351139;
+  color: #351139;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*************************/
+/* PAGE AUTHENTIFICATION */
+/*************************/
+.authentification-img {
+  width: 50%;
+}
+.authentification-img img {
+  max-width: 100%;
+}
+.authentification-container {
+  width: 50%;
+  margin: auto 3rem;
+}
+.authentification-container p {
+  width: 37%;
+}
+.authentification-container_form {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+/*****************************/
+/* FIN PAGE AUTHENTIFICATION */
+/*****************************//*# sourceMappingURL=main.css.map */

@@ -1,0 +1,85 @@
+@import "variable";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*********************************/ /* General */
+/*********************************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $color-text-principale;
+  font-size: 1.7rem;
+  // line-height: 1.5;
+
+  font-weight: 400;
+}
+.container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+header h1 {
+  font-size: 3.5rem !important;
+}
+
+%fontMargin {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+h1 {
+  @extend %fontMargin;
+  font-size: 4.5rem !important;
+  font-weight: 600;
+}
+h2 {
+  @extend %fontMargin;
+  font-size: 4rem !important;
+  font-weight: 600;
+}
+h3 {
+  @extend %fontMargin;
+  font-size: 2.5rem !important;
+  font-weight: 400;
+}
+p {
+  margin: 0;
+}
+.page-padding {
+  padding: 8rem 10rem;
+}
+.page-background {
+  background-color: $color-Background_general;
+}
+.btn-modal-delete {
+  background-color: $color-background_btn_delete;
+
+  &:hover {
+    background-color: darken($color-background_btn_delete, 20%);
+  }
+
+  &__outline {
+    border: solid 1px $color-background_btn_delete;
+    color: $color-background_btn_delete;
+
+    &:hover {
+      border: solid 1px darken($color-background_btn_delete, 20%);
+      color: darken($color-background_btn_delete, 20%);
+    }
+  }
+}
+
+.btn-accept {
+  background-color: $color-background_btn_accept;
+
+  &:hover {
+    background-color: darken($color-background_btn_accept, 10%);
+  }
+}
